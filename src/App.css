@@ -1,38 +1,128 @@
-.App {
-  text-align: center;
-}
-
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.wrapper{
   display: flex;
-  flex-direction: column;
-  align-items: center;
   justify-content: center;
-  font-size: calc(10px + 2vmin);
+}
+.wrapper .items_list, .scheme_detail{
+  list-style: none;
+  padding-left: 0;
+  width: 100%;
+  max-width: 800px;
+}
+
+ .item{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+  border-bottom: 1px solid lightgrey;
+  padding: 20px 0;
+}
+
+.items_list li button{
+  padding: 12px 30px;
+  border: 1px solid blue;
+  border-radius: 5px;
+  font-weight: bold;
+  background-color: transparent;
+  cursor: pointer;
+}
+
+.items_list li header h3{
+  margin-top: 0;
+  margin-bottom: 0.5rem;
+}
+
+.item_detail_list{
+  list-style-type: disc;
+  padding-left: 0;
+  
+}
+
+.item_detail_list li{
+  display: inline-block;
+  margin-right: 10px;
+  border: 0;
+  font-size: .7rem;
+  font-weight: 700;
+  color: grey;
+}
+
+.item_detail_list li+li::before{
+  content: '.';
+  padding: 10px;
+  font-weight: 900;
+}
+
+
+.cart_container{
+  width: 100%;
+  max-width: 800px;
+  padding: 30px 0;
+}
+
+.cart_container .schema_detail{
+  padding: 10px 25px;
+  border: 1px solid lightgrey;
+  margin-bottom: 20px;
+}
+
+.cart_container .schema_detail p{
+  margin: 0.5rem 0 .5rem 0;
+}
+.cart_container .schema_detail .schema_detail_wrapper{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.schema_detail .schema_detail_wrapper .schema_info header h3{
+  margin-top: 0;
+  margin-bottom: 0.5rem;
+}
+
+.schema_detail .schema_detail_wrapper .schema_info  ul{
+  margin: 0 0 .5rem 0;
+}
+
+.schema_detail .schema_detail_wrapper .schema_info_list{
+  list-style-type: none;
+  padding-left: 0;
+}
+
+.schema_detail_wrapper .schema_info_list li{
+  display: inline-block;
+  margin-right: 10px;
+  color: grey;
+  font-weight: bold;
+  font-size: .9rem;
+}
+
+.schema_detail_wrapper .schema_info_list li+li::before{
+  content: ".";
+  padding: 10px;
+}
+
+.cart_container .schema_detail input{
+  width: 98.5%;
+  height: 35px;
+  border: 1px solid lightgrey;
+  border-radius: 5px;
+  padding: 5px 0 5px 10px;
+  color: black;
+  font-weight: bold;
+}
+
+.cart_container .schema_detail p{
+  font-weight: bold;
+}
+
+.cart_invest_btn{
+  width: 100%;
+  padding: 12px ;
+  font-weight: bold;
   color: white;
-}
-
-.App-link {
-  color: #61dafb;
-}
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+  font-size: 1rem;
+  border: none;
+  border-radius: 5px;
+  background-color: blueviolet;
 }
